@@ -2,7 +2,7 @@
 let user = 0;
 let comp = 0;
 const choices = document.querySelectorAll(".choice");
-const msg = document.querySelector("#msgg");
+const msgg = document.querySelector("#msgg");
 const userscorepara = document.querySelector("#score");
 const compscorepara = document.querySelector("#cscore");
 
@@ -24,13 +24,13 @@ const showwinner= (userwin, userchoice, compchoice) => {
         userscorepara.innerText = user;
         console.log("You win!");
         msgg.innerText = `You win! Your ${userchoice} beats ${compchoice}`;
-        msg.style.backgroundColor = "green";
+        msgg.style.backgroundColor = "green";
     } else {
         comp++;
         compscorepara.innerText = comp;
         console.log("You lose!");
         msgg.innerText = `You lose! Your ${userchoice} loses to ${compchoice}`;
-        msg.style.backgroundColor = "red";
+        msgg.style.backgroundColor = "red";
     }
 };
 
